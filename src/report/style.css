@@ -12,7 +12,7 @@
   display:block;
   width: 100%;
   overflow: auto;
-  height: 100px;
+  height: auto;
 }
 
 .fixed_header thead tr {

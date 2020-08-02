@@ -30,20 +30,24 @@ def get_script():
     return html
 
 def get_table(keys,col_list,data):
-    html = '<table id="myTable">\n'
-    html += '<tr class="header">\n'
- 
+    html = '<table class="fixed_header" id="myTable">\n' #id="myTable"
+    html += "<thead>\n"
+    html += '<tr>\n' #id="myTable"
+
     html += "<th>Key Value</th>\n"
     for col in col_list:
         #html += "<th style=\"width:30%%;\">%s</th>\n" % col
         html += "<th>%s</th>\n" % col
-    html += "</tr>"
+    html += "</tr>\n"
+    html += "</thead>\n"
+    html += "<tbody>\n"
     for cur_key in keys:
         html += "<tr>\n"
         html += "<td>%s</td>\n" % cur_key
         for cur_col in col_list:
             html += "<td>%s</td>\n" % data[cur_key][cur_col]
         html += "</tr>\n"
+    html += "</tbody>\n"
     html += "</table>\n"
     return html
 
@@ -109,7 +113,7 @@ def build_table(file_list):
     return sorted(unique_keys), col_list, result_data
 
 def main():
-    unique_keys, col_list, table_data = build_table(['file1.json', 'file2.json', 'file3.json','file4.json','file5.json',])
+    unique_keys, col_list, table_data = build_table(['file1.json', 'file2.json', 'file3.json','file4.json','file5.json','file6.json'])
     print("Unique Keys:")
     print(unique_keys)
     print("Columns:")
