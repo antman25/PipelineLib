@@ -12,7 +12,8 @@
   display:block;
   width: 100%;
   overflow: auto;
-  height: auto;
+  height: 100%;
+  overflow-x:auto
 }
 
 .fixed_header thead tr {
