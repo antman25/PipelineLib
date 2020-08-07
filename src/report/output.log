@@ -1,0 +1,32 @@
+2020-08-06 23:43:49,815 INFO     test                      <module 'config' from '/home/antman/projects/PipelineLib/src/report/config.py'>
+2020-08-06 23:43:49,815 INFO     test                      IP: 192.168.0.1 -- Port 5000
+2020-08-06 23:43:49,815 INFO     test                      var1: test1
+var2: ['test2', 'test3']
+2020-08-06 23:43:49,815 INFO     test                      {
+    "conn": {
+        "ip": "192.168.0.1",
+        "port": 5000
+    },
+    "name": "anthony",
+    "vars": [
+        "test1",
+        "test2",
+        "test3"
+    ]
+}
+2020-08-06 23:44:04,776 INFO     test                      <module 'config' from '/home/antman/projects/PipelineLib/src/report/config.py'>
+2020-08-06 23:44:04,776 INFO     test                      IP: 192.168.0.1 -- Port 5000
+2020-08-06 23:44:04,776 INFO     test                      var1: test1
+var2: ['test2', 'test3']
+2020-08-06 23:44:04,776 INFO     test                      {
+    "conn": {
+        "ip": "192.168.0.1",
+        "port": 5000
+    },
+    "name": "anthony",
+    "vars": [
+        "test1",
+        "test2",
+        "test3"
+    ]
+}
