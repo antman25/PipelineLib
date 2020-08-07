@@ -75,22 +75,29 @@ class Config():
 class MyConfig(Config):
     def __init__(self, name):
         self.name = name
-
+        self._all_configs = []
         a = MyConn('192.168.0.1',5000)
         b = MyVars()
-        log.info (a)
-        log.info (b)
-        d = a.getConfig()
-        v = b.getConfig()
+        self._all_configs.append(a)
+        self._all_configs.append(b)
+        #log.info (a)
+        #log.info (b)
+        #d = a.getConfig()
+        #v = b.getConfig()
 
 
-        self.config_data =  { 'conn' : d,
-                              'vars' : v,
-                              'name' : self.name
-                            }
+        #self.config_data =  { 'conn' : d,
+        #                      'vars' : v,
+        #                      'name' : self.name
+        #                    }
 
     def getConfig(self):
-        return self.config_data
+        result = {}
+        for c in self._all_configs:
+            log.debug("Adding Config %s" % str(c))
+            result.update(c.getConfig())
+        log.debug("Final Config: %s" % result)
+        return result
 
 class MyConn(Config):
     def __init__(self, ip, port):

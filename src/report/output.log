@@ -30,3 +30,11 @@ var2: ['test2', 'test3']
         "test3"
     ]
 }
+2020-08-07 00:25:17,499 INFO     test                      <module 'config' from '/home/antman/projects/PipelineLib/src/report/config.py'>
+2020-08-07 00:25:17,499 DEBUG    test                      Adding Config IP: 192.168.0.1 -- Port 5000
+2020-08-07 00:25:17,499 DEBUG    test                      Adding Config var1: test1
+var2: ['test2', 'test3']
+2020-08-07 00:25:49,697 INFO     test                      <module 'config' from '/home/antman/projects/PipelineLib/src/report/config.py'>
+2020-08-07 00:25:49,697 DEBUG    test                      Adding Config IP: 192.168.0.1 -- Port 5000
+2020-08-07 00:25:49,697 DEBUG    test                      Adding Config var1: test1
+var2: ['test2', 'test3']
